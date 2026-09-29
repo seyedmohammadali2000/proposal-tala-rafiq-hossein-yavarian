@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پروپوزال طلا رفیق حسین یاوریان</title>
+    <title>پروپوزال استراتژیک و فنی سامانه مدیریت تسویه و تطبیق حساب طلا</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -16,7 +16,7 @@
     <header class="relative overflow-hidden border-b border-slate-800 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
         <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
             <div>
-                <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">نسخه مشارکتی و استراتژیک</span>
+                <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">نسخه مشارکتی و جامع</span>
                 <h1 class="text-2xl sm:text-3xl font-extrabold text-white mt-2">سامانه هوشمند تسویه و تطبیق حساب طلا</h1>
             </div>
             <div class="text-left sm:text-right">
@@ -36,8 +36,33 @@
                 خلاصه اجرایی و اهداف پروژه
             </h2>
             <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
-                این سند به عنوان تحلیل مشترک فنی و استراتژیک جهت توسعه پلتفرم اتوماسیون مالی بازار طلا تهیه شده است. هدف اصلی این سیستم، خودکارسازی فرایند دردسرساز تطبیق شماره حساب‌های بستانکاران و بدهکاران، مدیریت فیش‌های واریزی، کنترل زمان‌بندی‌های مالی و ارائه گزارش‌های دقیق روزانه است تا خطاهای انسانی به صفر نزدیک شود.
+                این سند تحلیل جامع فنی و استراتژیک جهت توسعه پلتفرم اتوماسیون مالی بازار طلا است. هدف سیستم، مدیریت دقیق چرخه تسویه میان بستانکاران (فروشندگان طلا) و بدهکاران (خریداران طلا)، کنترل زمان‌بندی‌های بازار و تطبیق هوشمند فیش‌های واریزی با شماره حساب‌های اعلام‌شده است تا خطاهای محاسباتی و انسانی به صفر برسد.
             </p>
+        </section>
+
+        <!-- Workflow & Timeline Logic (New Addition) -->
+        <section class="bg-slate-900/40 border border-amber-500/20 rounded-2xl p-8 space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">منطق عملیاتی بازار طلا</span>
+                <h2 class="text-2xl font-bold text-white mt-3">توالی زمانی و چرخه روزانه تسویه</h2>
+            </div>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                سیستم باید با چرخه واقعی بازار طلا کاملاً هماهنگ باشد. این چرخه دارای دو فاز اصلی زمانی است:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800">
+                    <div class="text-amber-400 font-bold text-lg mb-2">۱. شیفت صبح (تبادل شماره حساب‌ها)</div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        بستانکاران شماره حساب‌های خود را اعلام می‌کنند و سیستم بلافاصله آن‌ها را برای بدهکارانی که باید وجه طلا را بپردازند ارسال می‌کند. در این بازه، توازن میان «شخص پول‌خواه» و «شخص پول‌دهنده» برقرار می‌شود.
+                    </p>
+                </div>
+                <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800">
+                    <div class="text-amber-400 font-bold text-lg mb-2">۲. شیفت ظهر و عصر (ارسال فیش‌ها)</div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        از حدود ساعت ۱۲ ظهر به بعد (و حتی فیش‌های واریزی صبح روز بعد مربوط به تراکنش‌های شب قبل)، بدهکاران واریزی‌ها را انجام داده و فیش‌ها را ارسال می‌کنند. ربات باید این واریزی‌ها را به حساب‌های صبح متصل و مانیتور کند.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- Technical Challenges & Brutal Realities -->
@@ -55,7 +80,7 @@
                 <div class="bg-slate-900/40 border border-rose-500/20 rounded-xl p-6 relative">
                     <div class="text-rose-400 font-bold text-lg mb-2">۱. خطای پردازش تصویر و متن (OCR & Parsing)</div>
                     <p class="text-sm text-slate-300 leading-relaxed">
-                        کاربران در تلگرام فیش‌ها، متن‌ها و شماره حساب‌ها را با نگارش‌های متفرقه، غلط املایی یا عکس‌های بی‌کیفیت می‌فرستند. سیستم خودکار در تشخیص دقیق ارقام، کدهای پیگیری و شناسایی صاحبان حساب مستعد خطای شدید است. یک اشتباه کوچک در یک صفر، یعنی فاجعه مالی در حساب‌کتاب طلا!
+                        کاربران فیش‌ها، متن‌ها و شماره حساب‌ها را با نگارش‌های متفرقه یا عکس‌های بی‌کیفیت می‌فرستند. سیستم خودکار در تشخیص دقیق ارقام و کدهای پیگیری مستعد خطا است و یک اشتباه کوچک می‌تواند فاجعه مالی ایجاد کند.
                     </p>
                 </div>
 
@@ -63,15 +88,15 @@
                 <div class="bg-slate-900/40 border border-rose-500/20 rounded-xl p-6 relative">
                     <div class="text-rose-400 font-bold text-lg mb-2">۲. ریسک‌های امنیتی و کلاهبرداری (Fraud)</div>
                     <p class="text-sm text-slate-300 leading-relaxed">
-                        تلگرام بستر امن بانکی نیست. خطر ارسال فیش‌های جعلی تکراری، هک حساب‌ها یا دستکاری پیام‌ها وجود دارد. سیستم باید به‌شدت جلوی فیش‌های تکراری، کدهای پیگیری سوخته و تراکنش‌های خارج از ساعت قانونی (بعد از ساعت ۸ شب) را بگیرد[cite: 7].
+                        تلگرام بستر بانکی امنی نیست. خطر ارسال فیش‌های جعلی تکراری یا دستکاری پیام‌ها وجود دارد. سیستم باید به‌شدت جلوی فیش‌های تکراری و تراکنش‌های نامعتبر خارج از ساعت قانونی را بگیرد[cite: 7].
                     </p>
                 </div>
 
                 <!-- Challenge 3 -->
                 <div class="bg-slate-900/40 border border-rose-500/20 rounded-xl p-6 relative md:col-span-2">
-                    <div class="text-rose-400 font-bold text-lg mb-2">۳. پیچیدگی محاسبات زنجیره‌ای چند-به-چند (Many-to-Many)</div>
+                    <div class="text-rose-400 font-bold text-lg mb-2">۳. تاخیرهای زمانی و واریزی‌های بین روزی (Cross-Day Tracing)</div>
                     <p class="text-sm text-slate-300 leading-relaxed">
-                        تسویه طلا فرمول ساده‌ای ندارد. یک بستانکار ممکن است طلب خود را در چند پارت و از چندین بدهکار مختلف دریافت کند. پیاده‌سازی منطقی که این زنجیره را بدون نقص تراز کند، نیازمند معماری داده پیچیده و دقیق است[cite: 4].
+                        وقتی شماره حسابی در ساعت ۱۲ شب به یک نفر داده می‌شود و او فردا صبح ساعت ۷ پول را به حساب واریز می‌کند، ردیابی این تاخیر زمانی و تطبیق دقیق آن با شیفت کاری روز قبل نیازمند معماری داده بسیار پیچیده‌ای است.
                     </p>
                 </div>
             </div>
@@ -85,21 +110,21 @@
             </div>
             
             <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                اگر سیستم به صورت <strong class="text-rose-400">«تمام‌خودکار (Full-Auto)»</strong> طراحی شود، به دلیل خطاهای غیرقابل پیش‌بینی فیش‌ها و رفتار کاربران، احتمال بروز خسارت مالی و اشتباهات جبران‌ناپذیر بسیار بالا خواهد رفت. 
+                اگر سیستم به صورت <strong class="text-rose-400">«تمام‌خودکار (Full-Auto)»</strong> پیاده‌سازی شود، پیچیدگی‌های جابجایی حساب‌های صبح و فیش‌های عصر، احتمال بروز خسارت مالی را بالا می‌برد. 
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                 <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
                     <div class="text-amber-400 font-bold mb-1">هوش مصنوعی و ربات</div>
-                    <p class="text-xs text-slate-400">جمع‌آوری داده‌ها، خواندن فیش‌ها، دسته‌بندی و پیشنهاد دقیق تطبیق حساب‌ها.</p>
+                    <p class="text-xs text-slate-400">مدیریت شیفت‌های صبح و عصر، خواندن فیش‌ها و پیشنهاد تطبیق حساب‌ها.</p>
                 </div>
                 <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
                     <div class="text-amber-400 font-bold mb-1">پنل مدیریتی</div>
-                    <p class="text-xs text-slate-400">نمایش پیش‌نویس تراکنش‌ها، هشدار مغایرت‌ها و وضعیت فیش‌ها به اپراتور صرافی.</p>
+                    <p class="text-xs text-slate-400">نمایش پیش‌نویس تراکنش‌ها و هشدار مغایرت‌های زمانی به اپراتور.</p>
                 </div>
                 <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
                     <div class="text-amber-400 font-bold mb-1">تایید نهایی انسانی</div>
-                    <p class="text-xs text-slate-400">کلید نهایی «ثبت و ارسال» توسط انسان زده می‌شود تا امنیت مالی ۱۰۰٪ تضمین گردد.</p>
+                    <p class="text-xs text-slate-400">کلید نهایی ثبت تراکنش توسط انسان زده می‌شود تا امنیت مالی تضمین گردد.</p>
                 </div>
             </div>
         </section>
@@ -110,36 +135,36 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                 <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800 flex items-start gap-3">
                     <div class="w-2 h-2 rounded-full bg-amber-400 mt-2 shrink-0"></div>
-                    <div><strong class="text-white block mb-1">مدیریت ورودی بستانکاران و بدهکاران</strong>ثبت دقیق درخواست‌ها و استخراج خودکار شماره حساب‌ها[cite: 11].</div>
+                    <div><strong class="text-white block mb-1">مدیریت شیفت صبح (شماره حساب‌ها)</strong>ثبت و ارسال اتوماتیک شماره حساب بستانکاران به بدهکاران مربوطه[cite: 1, 11].</div>
                 </div>
                 <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800 flex items-start gap-3">
                     <div class="w-2 h-2 rounded-full bg-amber-400 mt-2 shrink-0"></div>
-                    <div><strong class="text-white block mb-1">تحلیل فیش‌ها و زمان‌بندی</strong>کنترل سقف واریزی، فیلتر زمان‌های مجاز (تا ساعت ۸ شب) و تفکیک اضافه‌واریزی‌ها[cite: 7, 8].</div>
+                    <div><strong class="text-white block mb-1">مدیریت شیفت عصر (فیش‌ها و زمان‌بندی)</strong>کنترل فیش‌های واریزی از ظهر به بعد، فیلتر ساعات مجاز و ثبت تاخیرهای بین‌روزی[cite: 7].</div>
                 </div>
                 <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800 flex items-start gap-3">
                     <div class="w-2 h-2 rounded-full bg-amber-400 mt-2 shrink-0"></div>
-                    <div><strong class="text-white block mb-1">گزارش‌دهی تفکیکی مشتریان</strong>ارائه گزارش‌های شفاف ردیف‌به‌ردیف از عملکرد مالی هر فرد[cite: 4, 11].</div>
+                    <div><strong class="text-white block mb-1">گزارش‌دهی تفکیکی مشتریان</strong>ارائه گزارش‌های شفاف ردیف‌به‌ردیف از وضعیت طلبکاران و بدهکاران[cite: 4, 11].</div>
                 </div>
                 <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800 flex items-start gap-3">
                     <div class="w-2 h-2 rounded-full bg-amber-400 mt-2 shrink-0"></div>
-                    <div><strong class="text-white block mb-1">کدگذاری واریز روزانه</strong>سیستم مکانیزه صدور کدهای پیگیری و رهگیری روزانه تراکنش‌ها[cite: 11].</div>
+                    <div><strong class="text-white block mb-1">کدگذاری واریز روزانه</strong>سیستم مکانیزه صدور کدهای رهگیری واریزی‌های روزانه[cite: 11].</div>
                 </div>
             </div>
         </section>
 
         <!-- Time & Budget Section -->
         <section class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 space-y-6">
-            <h2 class="text-2xl font-bold text-white">زمان‌بندی اجرا و هزینه‌های توسعه</h2>
+            <h2 class="text-2xl font-bold text-white">زمان‌بندی اجرا و مدل شراکت</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                 <div class="border-r sm:border-r-slate-800 sm:pl-6 space-y-2">
                     <span class="text-xs text-slate-400 uppercase tracking-wider">زمان تخمینی توسعه فنی</span>
                     <div class="text-2xl font-extrabold text-amber-400">۳ الی ۴ هفته کاری</div>
-                    <p class="text-xs text-slate-400">شامل پیاده‌سازی ربات، طراحی منطق تطبیق، تست‌های امنیتی و پنل مدیریت.</p>
+                    <p class="text-xs text-slate-400">شامل طراحی دیتابیس، پیاده‌سازی ربات، منطق زمان‌بندی و تست‌های امنیتی.</p>
                 </div>
                 <div class="space-y-2">
                     <span class="text-xs text-slate-400 uppercase tracking-wider">مدل شراکت و توسعه</span>
-                    <div class="text-lg font-bold text-emerald-400">توافق فنی و بازاریابی مشترک</div>
-                    <p class="text-xs text-slate-400">توسعه کامل زیرساخت فنی توسط تیم مهندسی و مدیریت بازار توسط شریک تجاری.</p>
+                    <div class="text-lg font-bold text-emerald-400">توسعه فنی توسط مهندس / بازاریابی توسط شریک</div>
+                    <p class="text-xs text-slate-400">تقسیم وظایف شفاف جهت به حداکثر رساندن سودآوری و پیشبرد تجاری پروژه.</p>
                 </div>
             </div>
         </section>
